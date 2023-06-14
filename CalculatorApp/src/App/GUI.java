@@ -655,33 +655,29 @@ public class GUI extends Constants {
 
                     case '/':
                              result = num1 / num2;
-                             AnswerScreen.setText(String.valueOf(result));
                              break;
                      
                     case '*':
                              result = num1 * num2;
-                             AnswerScreen.setText(String.valueOf(result));
                              break;
 
                     case '-':
                              result = num1 - num2;
-                             AnswerScreen.setText(String.valueOf(result));
                              break;
 
                     case '+':
                              result = num1 + num2;
-                             AnswerScreen.setText(String.valueOf(result));
                              break;
 
                     case '%':
                              result = num1 % num2;
-                             AnswerScreen.setText(String.valueOf(result));
                              break;
                              
                 }
 
                 AnswerScreen.setVisible(true);
-                num1 = result;
+                AnswerScreen.setText(String.valueOf(result));
+                num2 = num1;
 
             }
 
